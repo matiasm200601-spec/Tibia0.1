@@ -1,0 +1,155 @@
+========================================
+   FRASCOS VACÍOS - CONFIGURACIÓN FINAL
+========================================
+
+✅ ARCHIVO MODIFICADO:
+data/actions/scripts/liquids/potions.lua
+
+========================================
+
+🧪 SISTEMA DE FRASCOS VACÍOS (ACTUALIZADO)
+
+POCIONES "GREAT" Y "ULTIMATE" → Flask ID 7635
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Great Health Potion (7591) → 7635
+✓ Ultimate Health Potion (8473) → 7635
+✓ Great Mana Potion (7590) → 7635
+✓ Great Spirit Potion (8472) → 7635
+
+POCIONES "STRONG" → Flask ID 7634
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Strong Health Potion (7588) → 7634
+✓ Strong Mana Potion (7589) → 7634
+
+POCIONES NORMALES → Flask ID 7636
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Small Health Potion (8704) → 7636
+✓ Health Potion (7618) → 7636
+✓ Mana Potion (7620) → 7636
+
+========================================
+
+📋 DETALLE POR POCIÓN:
+
+HEALTH POTIONS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Small Health Potion (8704) → Flask 7636
+Health Potion (7618) → Flask 7636
+Strong Health Potion (7588) → Flask 7634
+Great Health Potion (7591) → Flask 7635
+Ultimate Health Potion (8473) → Flask 7635
+
+MANA POTIONS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Mana Potion (7620) → Flask 7636
+Strong Mana Potion (7589) → Flask 7634
+Great Mana Potion (7590) → Flask 7635
+
+SPIRIT POTIONS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Great Spirit Potion (8472) → Flask 7635
+
+========================================
+
+📊 RESUMEN POR TIPO DE FRASCO:
+
+FLASK 7635 (GREAT/ULTIMATE):
+- Great Health Potion
+- Ultimate Health Potion
+- Great Mana Potion
+- Great Spirit Potion
+
+FLASK 7634 (STRONG):
+- Strong Health Potion
+- Strong Mana Potion
+
+FLASK 7636 (NORMAL):
+- Small Health Potion
+- Health Potion
+- Mana Potion
+
+========================================
+
+🎮 CÓMO FUNCIONA:
+
+1. El jugador usa una poción
+2. La poción hace su efecto
+3. Aparece el frasco vacío correspondiente según:
+   - GREAT/ULTIMATE → 7635
+   - STRONG → 7634
+   - NORMAL → 7636
+
+========================================
+
+💡 LÓGICA DEL SISTEMA:
+
+Frascos más grandes para pociones más poderosas:
+- Pociones básicas (HP/Mana) → Frasco pequeño (7636)
+- Pociones intermedias (Strong) → Frasco mediano (7634)
+- Pociones avanzadas (Great/Ultimate) → Frasco grande (7635)
+
+========================================
+
+💰 SUGERENCIA PARA NPCs:
+
+Puedes configurar NPCs para comprar los frascos:
+
+Flask 7636 (Normal) - 3 gp
+Flask 7634 (Strong) - 4 gp
+Flask 7635 (Great/Ultimate) - 5 gp
+
+Esto incentiva a los jugadores a usar pociones
+mejores para obtener frascos más valiosos.
+
+========================================
+
+🔄 PARA ACTIVAR:
+
+1. REINICIA EL SERVIDOR
+
+2. Usa cualquier poción
+
+3. Verifica que aparezca el frasco correcto:
+   - Great/Ultimate → 7635
+   - Strong → 7634
+   - Normal → 7636
+
+========================================
+
+⚙️ CONFIGURACIÓN TÉCNICA:
+
+removeOnUse = "no"
+- Siempre deja frasco vacío
+
+Mapeo de pociones a frascos:
+- 7591, 8473, 7590, 8472 → 7635
+- 7588, 7589 → 7634
+- 8704, 7618, 7620 → 7636
+
+========================================
+
+✅ ARCHIVO MODIFICADO:
+
+data/actions/scripts/liquids/potions.lua
+
+Líneas modificadas:
+- Small Health (8704): empty = 7636
+- Health (7618): empty = 7636
+- Strong Health (7588): empty = 7634
+- Great Health (7591): empty = 7635
+- Ultimate Health (8473): empty = 7635
+- Mana (7620): empty = 7636
+- Strong Mana (7589): empty = 7634
+- Great Mana (7590): empty = 7635
+- Great Spirit (8472): empty = 7635
+
+========================================
+
+📝 NOTA IMPORTANTE:
+
+Verifica que los IDs 7635, 7634 y 7636 sean los
+correctos para tu servidor. Si los frascos no
+aparecen o aparecen items incorrectos, revisa
+el archivo items.xml para confirmar los IDs.
+
+========================================

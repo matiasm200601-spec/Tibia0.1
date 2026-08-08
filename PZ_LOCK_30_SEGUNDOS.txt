@@ -1,0 +1,121 @@
+========================================
+   PZ LOCK - REDUCIDO A 30 SEGUNDOS
+========================================
+
+✅ ARCHIVO MODIFICADO:
+config.lua
+
+========================================
+
+⏱️ CAMBIO REALIZADO:
+
+ANTES:
+pzLocked = 60 * 1000  (60 segundos)
+
+AHORA:
+pzLocked = 30 * 1000  (30 segundos)
+
+========================================
+
+🛡️ QUÉ ES PZ LOCK?
+
+PZ Lock (Protection Zone Lock) es el "efecto de combate"
+que aparece después de:
+
+✓ Atacar a otro jugador
+✓ Atacar a un monstruo
+✓ Recibir daño en combate
+✓ Usar hechizos ofensivos
+
+Mientras tengas PZ Lock activo:
+❌ No puedes entrar a Protection Zones (templos)
+❌ No puedes hacer logout instantáneo
+❌ Debes esperar a que expire el timer
+
+========================================
+
+⏲️ NUEVO COMPORTAMIENTO:
+
+Duración del PZ Lock: 30 segundos
+
+Ejemplo:
+1. Atacas a un jugador/monstruo
+2. Aparece el ícono de espadas cruzadas (PZ Lock)
+3. Después de 30 segundos sin combate, desaparece
+4. Puedes entrar a PZ o hacer logout
+
+========================================
+
+🎮 VENTAJAS DEL CAMBIO:
+
+✅ Más rápido para hacer logout después de hunt
+✅ Menos tiempo esperando para entrar al templo
+✅ Combates más dinámicos
+✅ Mejor experiencia de juego
+
+Nota: 30 segundos sigue siendo suficiente tiempo
+para evitar abuse de logout en combate.
+
+========================================
+
+📊 COMPARACIÓN:
+
+TIBIA OFICIAL: 60 segundos
+TU SERVIDOR (ANTES): 60 segundos
+TU SERVIDOR (AHORA): 30 segundos
+
+========================================
+
+⚙️ CONFIGURACIONES RELACIONADAS:
+
+pzLocked = 30 * 1000
+- Duración del PZ Lock: 30 segundos
+
+huntingDuration = 60 * 1000
+- Duración del "hunting mode": 60 segundos
+- (Marca amarilla cuando estás en combate)
+
+whiteSkullTime = 15 * 60 * 1000
+- Duración white skull después de atacar player: 15 minutos
+
+loginProtectionPeriod = 10 * 1000
+- Protección al hacer login: 10 segundos
+
+========================================
+
+🔄 PARA ACTIVAR:
+
+1. REINICIA EL SERVIDOR
+
+2. El cambio se aplica automáticamente
+
+3. Todos los jugadores tendrán PZ Lock de 30 segundos
+
+4. No necesitas modificar nada más
+
+========================================
+
+🔧 SI QUIERES CAMBIAR EL TIEMPO:
+
+Edita config.lua y busca la línea:
+pzLocked = 30 * 1000
+
+Cambia el número según desees:
+- 15 segundos: pzLocked = 15 * 1000
+- 20 segundos: pzLocked = 20 * 1000
+- 30 segundos: pzLocked = 30 * 1000 (actual)
+- 45 segundos: pzLocked = 45 * 1000
+- 60 segundos: pzLocked = 60 * 1000 (original)
+
+El número se multiplica por 1000 porque está
+en milisegundos (1 segundo = 1000 ms)
+
+========================================
+
+✅ CAMBIO COMPLETADO
+
+El PZ Lock ahora dura 30 segundos en lugar de 60.
+Esto hace el juego más ágil sin comprometer
+la seguridad del sistema de combate.
+
+========================================

@@ -1,0 +1,149 @@
+========================================
+   CAMBIOS EN LOOT BUYERS
+========================================
+
+✅ ARCHIVOS MODIFICADOS/CREADOS:
+
+1. data/npc/Loot Buyer.xml (MODIFICADO)
+2. data/npc/Loot Buyer 2.xml (NUEVO)
+
+========================================
+
+📋 LOOT BUYER (ORIGINAL - MODIFICADO)
+
+ITEMS AGREGADOS:
+✅ Dragon's tail (12374) - 100 gp
+✅ Green dragon leather (5877) - 100 gp  
+✅ Red dragon leather (5948) - 200 gp
+
+ITEMS ELIMINADOS:
+❌ Todas las ARMAS (axes, swords, bows, crossbows, wands, rods, etc.)
+❌ Todas las ARMADURAS (leather armor, plate armor, robes, etc.)
+❌ Todos los ESCUDOS (wooden shield, steel shield, demon shield, etc.)
+❌ Todos los CASCOS/HELMS (leather helmet, crown helmet, etc.)
+❌ Todas las BOTAS (leather boots, steel boots, golden boots, etc.)
+❌ Todas las PIERNAS (leather legs, plate legs, golden legs, etc.)
+
+COMPRA AHORA:
+✓ Materiales (leathers, scales, cloth, etc.)
+✓ Pociones (health, mana, spirit potions)
+✓ Comida (meat, ham, fish, fruits, etc.)
+✓ Gemas y joyas (diamonds, rubies, pearls, etc.)
+✓ Anillos y amuletos (life ring, protection amulet, etc.)
+✓ Items misceláneos (books, ropes, tools, etc.)
+✓ Flechas y munición (arrows, bolts)
+✓ Items de quest y raros
+
+MENSAJE:
+"Bienvenido |PLAYERNAME|! Te compro MATERIALES, POCIONES y ITEMS. Di {trade} para comerciar!"
+
+========================================
+
+🆕 LOOT BUYER 2 (NUEVO)
+
+COMPRA:
+✓ CASCOS/HELMS (leather helmet → golden helmet)
+✓ BOTAS (leather boots → golden boots)  
+✓ PIERNAS (leather legs → dragon scale legs)
+✓ ARMADURAS (leather armor → demon armor)
+✓ ESCUDOS (wooden shield → blessed shield)
+✓ ARCOS Y BALLESTAS (bow, crossbow, elvish bow, etc.)
+✓ LANZAS (spear, hunting spear, ripper lance, etc.)
+✓ WANDS Y RODS (todas las varitas mágicas)
+✓ HACHAS (hand axe → demonwing axe)
+
+MENSAJE:
+"Bienvenido |PLAYERNAME|! Te compro ARMAS, ARMADURAS y ESCUDOS. Di {trade} para comerciar!"
+
+APARIENCIA:
+- Tipo: Humano masculino (130)
+- Ropa: Diferente al Loot Buyer original
+- Colores: Tonos oscuros
+
+========================================
+
+📊 RESUMEN DE LA SEPARACIÓN:
+
+LOOT BUYER (Original):
+- Materiales de crafting
+- Pociones y comida
+- Gemas y joyas
+- Items misceláneos
+- Anillos y amuletos
+- Munición (flechas, bolts)
+
+LOOT BUYER 2 (Nuevo):
+- Todo tipo de equipamiento wearable
+- Armas de todo tipo
+- Armaduras y ropas
+- Escudos
+- Cascos y botas
+- Piernas
+
+========================================
+
+🎯 VENTAJAS DE ESTA SEPARACIÓN:
+
+1. ✅ Más organizado: Equipamiento vs Materiales
+2. ✅ Más fácil de encontrar items
+3. ✅ Lista más corta en cada NPC
+4. ✅ Especialización clara de cada NPC
+5. ✅ Mejor experiencia de usuario
+
+========================================
+
+📍 SUGERENCIA DE UBICACIÓN:
+
+Coloca los 2 NPCs cerca pero separados:
+
+[Loot Buyer]     →  Compra materiales/items
+[Loot Buyer 2]   →  Compra equipo/armas
+
+O en diferentes ciudades/zonas
+
+========================================
+
+🔄 PARA ACTIVAR:
+
+1. REINICIA EL SERVIDOR
+
+2. Coloca Loot Buyer (original):
+   /n Loot Buyer
+
+3. Coloca Loot Buyer 2 (nuevo):
+   /n Loot Buyer 2
+
+4. ¡Listo! Ambos NPCs funcionan independientemente
+
+========================================
+
+✅ ITEMS ESPECÍFICOS AGREGADOS:
+
+Dragon's tail (12374):
+- Precio de compra: 100 gp
+- Dropeado por: Dragons, Dragon Hatchlings
+
+Green dragon leather (5877):
+- Precio de compra: 100 gp  
+- Dropeado por: Dragons, Grand Mother Foulscale
+
+Red dragon leather (5948):
+- Precio de compra: 200 gp
+- Dropeado por: Dragon Lords, Demodras
+
+========================================
+
+📝 NOTAS:
+
+- Los 3 items agregados (dragon's tail y dragon leathers)
+  están en el Loot Buyer ORIGINAL
+  
+- El Loot Buyer 2 NO compra estos 3 items, solo equipamiento
+
+- Ambos NPCs son independientes y pueden usarse
+  al mismo tiempo
+
+- Si quieres volver al sistema anterior, hay un backup
+  en: data/npc/Loot Buyer_BACKUP.xml (si existe)
+
+========================================

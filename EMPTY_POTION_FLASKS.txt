@@ -1,0 +1,170 @@
+========================================
+   EMPTY POTION FLASKS - CONFIGURACIÓN
+========================================
+
+✅ ARCHIVO MODIFICADO:
+data/actions/scripts/liquids/potions.lua
+
+========================================
+
+🧪 SISTEMA DE FRASCOS VACÍOS
+
+Ahora al usar cualquier poción, aparecerá el frasco
+vacío correspondiente en tu inventario:
+
+HEALTH POTIONS → Empty Potion Flask (7634)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Small Health Potion (8704)
+✓ Health Potion (7618)
+✓ Strong Health Potion (7588)
+✓ Great Health Potion (7591)
+✓ Ultimate Health Potion (8473)
+
+MANA POTIONS → Empty Potion Flask (7635)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Mana Potion (7620)
+✓ Strong Mana Potion (7589)
+✓ Great Mana Potion (7590)
+
+SPIRIT POTIONS → Empty Potion Flask (7636)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Great Spirit Potion (8472)
+
+========================================
+
+📋 IDs DE LOS FRASCOS VACÍOS:
+
+7634 - Empty Potion Flask (Health)
+   Peso: 160 oz
+   Descripción: "Return it to a potion store for your deposit."
+   
+7635 - Empty Potion Flask (Mana)
+   Peso: 180 oz
+   Descripción: "Return it to a potion store for your deposit."
+   
+7636 - Empty Potion Flask (Spirit)
+   Peso: 150 oz
+   Descripción: "Return it to a potion store for your deposit."
+
+========================================
+
+🎮 CÓMO FUNCIONA:
+
+1. El jugador usa una poción (health, mana o spirit)
+2. La poción se consume y hace su efecto
+3. Aparece automáticamente el frasco vacío en el inventario
+4. El jugador puede vender el frasco vacío a NPCs
+
+========================================
+
+💰 VENTA DE FRASCOS VACÍOS:
+
+Los siguientes NPCs compran empty potion flasks:
+
+NPC Hyacinth:
+- Compra: empty potion flask (7636) por 5 gp
+
+NPC Lily:
+- Compra: empty potion flask (7636) por 5 gp
+
+Puedes agregar más NPCs que compren los otros tipos
+de frascos (7634 y 7635) si lo deseas.
+
+========================================
+
+⚙️ CONFIGURACIÓN TÉCNICA:
+
+removeOnUse = "no"
+- Configurado para que SIEMPRE deje frasco vacío
+
+usableOnTarget = "yes"
+- Se puede usar en otros jugadores (heal friend)
+
+splashable = "no"
+- No se puede tirar al suelo
+
+Cada poción tiene asignado su tipo de frasco:
+- Health potions → 7634
+- Mana potions → 7635
+- Spirit potions → 7636
+
+========================================
+
+🔄 PARA ACTIVAR:
+
+1. REINICIA EL SERVIDOR
+
+2. Usa cualquier poción (health, mana o spirit)
+
+3. Verifica que aparezca el frasco vacío en tu inventario
+
+4. El sistema funciona automáticamente
+
+========================================
+
+✅ CAMBIOS REALIZADOS:
+
+ANTES:
+- Todas las pociones dejaban vial (2006)
+
+AHORA:
+- Health potions dejan empty potion flask (7634)
+- Mana potions dejan empty potion flask (7635)
+- Spirit potions dejan empty potion flask (7636)
+
+========================================
+
+📊 TIPOS DE POCIONES AFECTADAS:
+
+SMALL HEALTH POTION (8704)
+→ Flask: 7634 (Health)
+
+HEALTH POTION (7618)
+→ Flask: 7634 (Health)
+
+STRONG HEALTH POTION (7588)
+→ Flask: 7634 (Health)
+
+GREAT HEALTH POTION (7591)
+→ Flask: 7634 (Health)
+
+ULTIMATE HEALTH POTION (8473)
+→ Flask: 7634 (Health)
+
+MANA POTION (7620)
+→ Flask: 7635 (Mana)
+
+STRONG MANA POTION (7589)
+→ Flask: 7635 (Mana)
+
+GREAT MANA POTION (7590)
+→ Flask: 7635 (Mana)
+
+GREAT SPIRIT POTION (8472)
+→ Flask: 7636 (Spirit)
+
+========================================
+
+💡 SUGERENCIAS:
+
+1. Agrega los frascos vacíos al Loot Buyer:
+   - empty potion flask (7634) - 3 gp
+   - empty potion flask (7635) - 3 gp
+   - empty potion flask (7636) - 5 gp
+
+2. Los jugadores pueden acumular frascos y venderlos
+
+3. Los frascos pesan, así que los jugadores deberán
+   decidir si los guardan o los venden
+
+4. Sistema realista como en Tibia oficial
+
+========================================
+
+🔧 SI QUIERES VOLVER A VIALS (2006):
+
+Edita data/actions/scripts/liquids/potions.lua
+y cambia todos los "empty = 7634/7635/7636"
+de vuelta a "empty = 2006"
+
+========================================

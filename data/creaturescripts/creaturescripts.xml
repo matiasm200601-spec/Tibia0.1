@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+	<event type="login" name="PlayerLogin" event="script" value="login.lua"/>
+	<event type="joinchannel" name="GuildMotd" event="script" value="guildmotd.lua"/>
+	<event type="receivemail" name="Mail" event="script" value="mail.lua"/>
+	<event type="reportbug" name="SaveReportBug" script="reportbug.lua"/>
+	<event type="advance" name="AdvanceSave" event="script" value="advancesave.lua"/>
+	<event type="kill" name="ArenaKill" event="script" value="arenakill.lua"/>
+	<event type="death" name="PythiusTheRotten" event="script" value="PythiusTheRotten.lua"/>
+	
+	<event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua"/>
+
+
+	<!-- Inquisition Full Quest -->
+	<event type="kill" name="inquisitionPortals" script="Inquisition.lua"/>
+	<event type="think" name="Idle" event="script" value="idle.lua"/>
+	<event type="think" name="SkullCheck" event="script" value="skullcheck.lua"/>
+	
+	<!-- Autoloot System -->
+	<event type="kill" name="AutoLoot" event="script" value="autoloot.lua"/>
+	<event type="login" name="AutoLootContainer" event="script" value="autoloot.lua"/>
+	
+	<!-- Protection Level System -->
+	<event type="login" name="ProtectionLevel" event="script" value="protection_level.lua"/>
+	
+	<!-- Death System - Solo pérdida de experiencia -->
+	<event type="preparedeath" name="DeathSystem" event="script" value="death_system.lua"/>
+	<event type="death" name="DeathSystemFinal" event="script" value="death_system.lua"/>
+	
+	<!-- First Items System -->
+	<event type="login" name="FirstItems" event="script" value="firstitems.lua"/>
+	
+	<!-- Loot Boost System -->
+	<event type="death" name="LootBoost" event="script" value="lootboost.lua"/>
+
+</creaturescripts>

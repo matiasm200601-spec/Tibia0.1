@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Casino" script="data/npc/scripts/Casino.lua" walkinterval="0" floorchange="0" speed="0">
+	<health now="100" max="100"/>
+	<look type="128" head="57" body="59" legs="40" feet="76" addons="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Hola, quieres apostar crystal coins? Ponlos cerca de mi y di {l} o {h}."/>
+		<parameter key="message_farewell" value="Buena suerte en tu proxima apuesta!"/>
+		<parameter key="message_walkaway" value="Hasta luego!"/>
+		<parameter key="module_keywords" value="0"/>
+		<parameter key="module_shop" value="0"/>
+	</parameters>
+</npc>
